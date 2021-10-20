@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+    <title>Find Mistake | Xato Toping</title>
+  </head>
+  <body>
+    <header>
+      <div class="continer">
+        <form class="formBox" id="formBox">
+          <div class="left">
+            <textarea
+              placeholder="Write the correct words"
+              type=""
+              id="leftInput"
+            ></textarea>
+          </div>
+          <div class="right">
+            <textarea
+              placeholder="Enter the words to be checked"
+              type="text"
+              id="rightInput"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="btn-box">
+        <a href="#return">
+          <button form="formBox" type="button" onclick="checkInput()">
+            Check
+          </button>
+        </a>
+        <a href="#return">
+          <button form="formBox" type="button" onclick="clearMistakes()">
+            Clear
+          </button>
+        </a>
+      </div>
+      <div class="returnBox">
+        <div class="returns" id="return"></div>
+      </div>
+    </header>
+  </body>
+</html>
